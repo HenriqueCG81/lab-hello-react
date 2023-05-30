@@ -1,0 +1,115 @@
+.App {
+  background-color: #282c34;
+  min-height: 100vh;
+  color: white;
+  font-size: calc(10px + 2vmin);
+  padding: 30px;
+  margin: 50px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.imglanding {
+  width: 40px;
+}
+.imgHead {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+h2 {
+  font-size: 80px;
+}
+.buttonA {
+  border: hidden;
+  width: 100px;
+  height: 30px;
+  font-weight: bolder;
+  margin-top: 30px;
+}
+.words {
+  width: 400px;
+}
+.icons {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px;
+  flex-shrink: initial;
+}
+
+.iconWords {
+  color: rgb(18, 18, 18);
+  width: 200px;
+  padding-bottom: 30px;
+  filter: blur(0.5px);
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 60px;
+  }
+
+  .words {
+    width: 100%;
+  }
+
+  .icons {
+    flex-wrap: wrap;
+  }
+
+  .iconWords {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 40px;
+  }
+
+  .imgHead {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .words {
+    width: 100%;
+  }
+
+  .icons {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+
+  .iconWords {
+    width: 100%;
+    text-align: center;
+  }
+}
